@@ -1,0 +1,39 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+        <TargetFrameworks>net45;net461;netcoreapp2.0</TargetFrameworks>
+        <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+        <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    </PropertyGroup>
+
+	<ItemGroup>
+	  <Compile Remove="Commands\**" />
+	  <Compile Remove="Services\WMI\**" />
+	  <EmbeddedResource Remove="Commands\**" />
+	  <EmbeddedResource Remove="Services\WMI\**" />
+	  <None Remove="Commands\**" />
+	  <None Remove="Services\WMI\**" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <Compile Remove="Extensions\BitmapExtensions.cs" />
+	  <Compile Remove="Services\GraphicsService.cs" />
+	  <Compile Remove="Services\HttpService.cs" />
+	  <Compile Remove="Services\NetworkService.cs" />
+	  <Compile Remove="Services\WindowsFormsService.cs" />
+	  <Compile Remove="Services\WindowsHostService.cs" />
+	  <Compile Remove="Services\WindowsMessageService.cs" />
+	  <Compile Remove="Services\WMIService.cs" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <PackageReference Include="Remnant.Shield" Version="1.0.0" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <Reference Include="Remnant.Shield">
+	    <HintPath>..\..\Remnant.Shield\Remnant.Shield\bin\Debug\net461\Remnant.Shield.dll</HintPath>
+	  </Reference>
+	</ItemGroup>
+
+</Project>

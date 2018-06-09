@@ -1,0 +1,19 @@
+﻿<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <version>3.0.4</version>
+    <authors>Neill Verreynne</authors>
+    <owners>Neill Verreynne</owners>
+    <id>Remnant.Core</id>
+    <title>Remnant.Core</title>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Database Gateway including Connection, Transaction and SQL abstraction</description>
+    <copyright>Copyright © 2013 by Neill Verreynne</copyright>
+    <dependencies>
+      <dependency id="Remnant.Shield" version="3.0.1" />
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="bin\Debug\Remnant.Core.dll" target="lib\Remnant.Core.dll" />
+  </files>
+</package>
